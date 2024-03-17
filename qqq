@@ -1,0 +1,33 @@
+ex 1:- $git init
+$git add my_file.txt
+$git commit -m"Your commit message here"
+$git commit -m"Add a new file called my_file.txt"
+ex2:-$git checkout master
+$git checkout -b feature-branch
+$git add
+$git commit-m"your commit meassage for feature branch"
+$git checkout master
+$git merge feature-branch
+ex3:-$git stash save"your stash message"
+$git checkout target-branch
+$git stash apply
+ex4:-$git clone <repository_url>
+$git clone https://github.com/username/repo-name.git
+ex5:-$git checkout <branch-name>
+$git fetch origin
+$git rebase origin/<branch-name>
+$git rebase --continue
+$git push origin <branch-name>
+ex6:- $git checkout master
+$git merge feature-branch -m"your custom commit message here"
+ex7:-$git tag v1.0
+$git tag v1.0<commit-SHA>
+ex8:-$git cherry-pick<start-commit>^..<end-commit>
+$git cherry-pick ABC123^..DEF456
+ex9:-bash
+git show<commit-ID>
+$git show abc123
+$git log -n abc123
+ex:-10 $git log --author+"johndoe" --since="2023-01-01" --until="2023-12-31"
+ex:11 $git log -n 5
+ex:-12 $git revert abc 123
